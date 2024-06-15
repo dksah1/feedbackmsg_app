@@ -12,7 +12,6 @@ import { signupSchema } from "@/schemas/signupSchema";
 import { verifySchema } from "@/schemas/verifySchema";
 import { ApiResponse } from "@/types/ApiResponse";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "@react-email/components";
 import axios, { AxiosError } from "axios";
 import { useParams, useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
@@ -20,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import React from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { Button } from "@/components/ui/button";
 
 const VerifyAccount = () => {
   const router = useRouter();
